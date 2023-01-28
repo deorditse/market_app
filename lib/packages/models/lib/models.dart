@@ -1,0 +1,4 @@
+///info_order_model
+export "src/info_order_model/info_order_model.dart";
+
+enum Location { v1, v2, v3, v4 }

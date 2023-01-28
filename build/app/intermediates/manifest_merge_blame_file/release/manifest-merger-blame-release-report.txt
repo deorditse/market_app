@@ -1,0 +1,191 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.market_app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.VIBRATE" />
+11-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:3:5-65
+11-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:3:22-63
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:4:5-65
+12-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:4:22-62
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:5:5-80
+13-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:5:22-77
+14    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+15    <uses-feature
+15-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:25:5-27:36
+16        android:name="android.hardware.camera"
+16-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:26:9-47
+17        android:required="false" />
+17-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:27:9-33
+18    <uses-feature
+18-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:28:5-30:36
+19        android:name="android.hardware.camera.front"
+19-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:29:9-53
+20        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+20-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:30:9-33
+21    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+22    <uses-feature
+22-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:33:5-35:36
+23        android:name="android.hardware.camera.autofocus"
+23-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:34:9-57
+24        android:required="false" />
+24-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:35:9-33
+25    <uses-feature
+25-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:36:5-38:36
+26        android:name="android.hardware.camera.flash"
+26-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:37:9-53
+27        android:required="false" />
+27-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:38:9-33
+28    <uses-feature
+28-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:39:5-41:36
+29        android:name="android.hardware.screen.landscape"
+29-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:40:9-57
+30        android:required="false" />
+30-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:41:9-33
+31    <uses-feature
+31-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:42:5-44:36
+32        android:name="android.hardware.wifi"
+32-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:43:9-45
+33        android:required="false" />
+33-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:44:9-33
+34
+35    <application
+36        android:name="android.app.Application"
+36-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:8:9-42
+37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+37-->[androidx.core:core:1.8.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/270e9501dde0430a83746f97bf9ab544/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+38        android:icon="@mipmap/ic_launcher"
+38-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:9:9-43
+39        android:label="market_app" >
+39-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:7:9-35
+40        <activity
+40-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:10:9-30:20
+41            android:name="com.example.market_app.MainActivity"
+41-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:11:13-41
+42            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+42-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:15:13-163
+43            android:exported="true"
+43-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:12:13-36
+44            android:hardwareAccelerated="true"
+44-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:16:13-47
+45            android:launchMode="singleTop"
+45-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:13:13-43
+46            android:theme="@style/LaunchTheme"
+46-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:14:13-47
+47            android:windowSoftInputMode="adjustResize" >
+47-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:17:13-55
+48
+49            <!--
+50                 Specifies an Android theme to apply to this Activity as soon as
+51                 the Android process has started. This theme is visible to the user
+52                 while the Flutter UI initializes. After that, this theme continues
+53                 to determine the Window background behind the Flutter UI.
+54            -->
+55            <meta-data
+55-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:22:13-25:17
+56                android:name="io.flutter.embedding.android.NormalTheme"
+56-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:23:15-70
+57                android:resource="@style/NormalTheme" />
+57-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:24:15-52
+58
+59            <intent-filter>
+59-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:26:13-29:29
+60                <action android:name="android.intent.action.MAIN" />
+60-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:27:17-68
+60-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:27:25-66
+61
+62                <category android:name="android.intent.category.LAUNCHER" />
+62-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:28:17-76
+62-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:28:27-74
+63            </intent-filter>
+64        </activity>
+65        <!--
+66             Don't delete the meta-data below.
+67             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+68        -->
+69        <meta-data
+69-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:33:9-35:33
+70            android:name="flutterEmbedding"
+70-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:34:13-44
+71            android:value="2" />
+71-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:35:13-30
+72
+73        <provider
+73-->[:image_picker_android] /Users/dmitrijdemidov/Desktop/market_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-18:20
+74            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+74-->[:image_picker_android] /Users/dmitrijdemidov/Desktop/market_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-82
+75            android:authorities="com.example.market_app.flutter.image_provider"
+75-->[:image_picker_android] /Users/dmitrijdemidov/Desktop/market_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-74
+76            android:exported="false"
+76-->[:image_picker_android] /Users/dmitrijdemidov/Desktop/market_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
+77            android:grantUriPermissions="true" >
+77-->[:image_picker_android] /Users/dmitrijdemidov/Desktop/market_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-47
+78            <meta-data
+78-->[:image_picker_android] /Users/dmitrijdemidov/Desktop/market_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-17:75
+79                android:name="android.support.FILE_PROVIDER_PATHS"
+79-->[:image_picker_android] /Users/dmitrijdemidov/Desktop/market_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:16:17-67
+80                android:resource="@xml/flutter_image_picker_file_paths" />
+80-->[:image_picker_android] /Users/dmitrijdemidov/Desktop/market_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:17:17-72
+81        </provider>
+82
+83        <uses-library
+83-->[androidx.window:window:1.0.0-beta04] /Users/dmitrijdemidov/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+84            android:name="androidx.window.extensions"
+84-->[androidx.window:window:1.0.0-beta04] /Users/dmitrijdemidov/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+85            android:required="false" />
+85-->[androidx.window:window:1.0.0-beta04] /Users/dmitrijdemidov/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+86        <uses-library
+86-->[androidx.window:window:1.0.0-beta04] /Users/dmitrijdemidov/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+87            android:name="androidx.window.sidecar"
+87-->[androidx.window:window:1.0.0-beta04] /Users/dmitrijdemidov/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+88            android:required="false" />
+88-->[androidx.window:window:1.0.0-beta04] /Users/dmitrijdemidov/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+89
+90        <provider
+90-->[androidx.emoji2:emoji2:1.0.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/bd44fb57d7c3686a718759dd3e583490/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+91            android:name="androidx.startup.InitializationProvider"
+91-->[androidx.emoji2:emoji2:1.0.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/bd44fb57d7c3686a718759dd3e583490/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+92            android:authorities="com.example.market_app.androidx-startup"
+92-->[androidx.emoji2:emoji2:1.0.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/bd44fb57d7c3686a718759dd3e583490/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+93            android:exported="false" >
+93-->[androidx.emoji2:emoji2:1.0.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/bd44fb57d7c3686a718759dd3e583490/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+94            <meta-data
+94-->[androidx.emoji2:emoji2:1.0.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/bd44fb57d7c3686a718759dd3e583490/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+95                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+95-->[androidx.emoji2:emoji2:1.0.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/bd44fb57d7c3686a718759dd3e583490/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+96                android:value="androidx.startup" />
+96-->[androidx.emoji2:emoji2:1.0.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/bd44fb57d7c3686a718759dd3e583490/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+97            <meta-data
+97-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/da12c36cbc191d2ddc924c1ef309570f/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+98                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+98-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/da12c36cbc191d2ddc924c1ef309570f/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+99                android:value="androidx.startup" />
+99-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/da12c36cbc191d2ddc924c1ef309570f/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+100        </provider>
+101
+102        <activity
+102-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:47:9-53:63
+103            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+103-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:48:13-74
+104            android:clearTaskOnLaunch="true"
+104-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:49:13-45
+105            android:screenOrientation="sensorLandscape"
+105-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:50:13-56
+106            android:stateNotNeeded="true"
+106-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:51:13-42
+107            android:theme="@style/zxing_CaptureTheme"
+107-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:52:13-54
+108            android:windowSoftInputMode="stateAlwaysHidden" />
+108-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:53:13-60
+109    </application>
+110
+111</manifest>

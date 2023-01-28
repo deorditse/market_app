@@ -1,0 +1,4 @@
+#Fri Jan 27 20:04:34 MSK 2023
+base.0=/Users/dmitrijdemidov/Desktop/market_app/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
