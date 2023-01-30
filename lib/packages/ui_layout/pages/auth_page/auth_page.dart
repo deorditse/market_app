@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:market_app/packages/data_layout/lib/data_layout.dart';
 import 'package:models/models.dart';
 import 'package:market_app/packages/ui_layout/style_app/consts_app.dart';
 import 'package:market_app/packages/ui_layout/style_app/container_style.dart';
@@ -15,7 +16,6 @@ import '../../widgets_for_all_pages/icon_and_message.dart';
 import 'package:business_layout/business_layout.dart';
 import 'package:http_parser/http_parser.dart';
 import 'package:http/http.dart' as http;
-
 
 class AuthPage extends StatefulWidget {
   static const String id = '/authPage';
@@ -244,13 +244,8 @@ class _UpperCaseTextFormatter extends TextInputFormatter {
   TextEditingValue formatEditUpdate(
       TextEditingValue oldValue, TextEditingValue newValue) {
     return TextEditingValue(
-      text: capitalize(newValue.text),
+      text: capitalizeFirst(newValue.text),
       selection: newValue.selection,
     );
   }
-}
-
-String capitalize(String value) {
-  if (value.trim().isEmpty) return "";
-  return "${value[0].toUpperCase()}${value.substring(1).toLowerCase()}";
 }

@@ -54,7 +54,7 @@ class OrdersToFulfillBloc
         isCheckAll: event.isCheckAll,
         listWithIdOrdersCheckOrdersToFulfill: event.isCheckAll
             ? List.generate(state.listOrdersToFulfill.length,
-                (index) => state.listOrdersToFulfill[index].id_order).toSet()
+                (index) => state.listOrdersToFulfill[index].id_order!).toSet()
             : {},
       ),
     );

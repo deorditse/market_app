@@ -136,7 +136,7 @@ class _OrdersToFulfillPageState extends State<OrdersToFulfillPage> {
                                   state.listWithIdOrdersCheckOrdersToFulfill;
 
                               String idOrder =
-                                  widget.listWithOrders[index].id_order;
+                                  widget.listWithOrders[index].id_order!;
                               return myTextButton(
                                 onPressed: () {
                                   if (listCheckOrders.contains(idOrder)) {
@@ -348,31 +348,4 @@ class _OrdersToFulfillPageState extends State<OrdersToFulfillPage> {
       );
     }
   }
-}
-
-//отправить выполненные заказы
-Future<Map<int, dynamic>?> sendCompletedOrdersToTheServer({
-  required Location location,
-  required String userName,
-  required String password,
-  required List<String> listCompletedOrders,
-}) async {
-  String basicAuth =
-      'Basic ${base64.encode(utf8.encode('$userName:$password'))}';
-
-  var post = http.post(
-    urlMain(urlPath: '${location.name}/ready/GetInfo'),
-    body: json.encode({
-      "name": userName,
-      "listIdOrders": listCompletedOrders.toString(),
-    }),
-    headers: {
-      'Authorization': basicAuth,
-    },
-  );
-  var response = post;
-  return await genericRequestHttp<String>(
-    nameMethod: 'sendCompletedOrdersToTheServer',
-    setResponse: response,
-  );
 }

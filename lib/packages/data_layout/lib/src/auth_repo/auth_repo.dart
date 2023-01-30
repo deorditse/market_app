@@ -11,24 +11,36 @@ class AuthRepo {
     required String userName,
     required String password,
   }) async {
-    String basicAuth =
-        'Basic ${base64.encode(utf8.encode('$userName:$password'))}';
+    try {
+      String basicAuth =
+          'Basic ${base64.encode(utf8.encode('$userName:$password'))}';
 
-    var response = http.post(
-      urlMain(urlPath: 'v1/Authorization/GetInfo'),
-      headers: {
-        'Authorization': basicAuth,
-        'Content-Type': 'application/json',
-      },
-    );
-
-    return await genericRequestHttp<String>(
-      nameMethod: 'signInAuthData',
-      setResponse: response,
-    );
+      var response = await http.post(
+        urlMain(urlPath: 'v1/Authorization/GetInfo'),
+        headers: {
+          'Authorization': basicAuth,
+          'Content-Type': 'application/json',
+        },
+      );
+      final jsonData = json.decode(utf8.decode(response.body.codeUnits));
+      if (response.statusCode == 200) {
+        return {200: jsonData["status"]};
+      } else {
+        return theRequestFailed(
+          nameMethod: "signInAuthData",
+          responseStatus: response.statusCode,
+          data: jsonData,
+        );
+      }
+    } catch (error) {
+      return errorRequest(
+        error: error,
+        nameMethod: "signInAuthData",
+      );
+    }
   }
 
-  //save in local storage
+//save in local storage
   FlutterSecureStorage? _storageSecure; //локальная база данных - секьюрная
   Future<void> savePassAndLoginInLocalStorage(
       {required String? username, required String? newPassword}) async {

@@ -20,10 +20,10 @@ InfoOrderModel _$InfoOrderModelFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$InfoOrderModel {
-  String get name => throw _privateConstructorUsedError;
+  String? get name => throw _privateConstructorUsedError;
   String? get foto => throw _privateConstructorUsedError;
-  String get place => throw _privateConstructorUsedError;
-  String get id_order => throw _privateConstructorUsedError;
+  String? get place => throw _privateConstructorUsedError;
+  String? get id_order => throw _privateConstructorUsedError;
   String? get package => throw _privateConstructorUsedError;
   String? get marking_PartA => throw _privateConstructorUsedError;
   String? get marking_PartB => throw _privateConstructorUsedError;
@@ -42,10 +42,10 @@ abstract class $InfoOrderModelCopyWith<$Res> {
       _$InfoOrderModelCopyWithImpl<$Res, InfoOrderModel>;
   @useResult
   $Res call(
-      {String name,
+      {String? name,
       String? foto,
-      String place,
-      String id_order,
+      String? place,
+      String? id_order,
       String? package,
       String? marking_PartA,
       String? marking_PartB,
@@ -65,32 +65,32 @@ class _$InfoOrderModelCopyWithImpl<$Res, $Val extends InfoOrderModel>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = null,
+    Object? name = freezed,
     Object? foto = freezed,
-    Object? place = null,
-    Object? id_order = null,
+    Object? place = freezed,
+    Object? id_order = freezed,
     Object? package = freezed,
     Object? marking_PartA = freezed,
     Object? marking_PartB = freezed,
     Object? dop = freezed,
   }) {
     return _then(_value.copyWith(
-      name: null == name
+      name: freezed == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       foto: freezed == foto
           ? _value.foto
           : foto // ignore: cast_nullable_to_non_nullable
               as String?,
-      place: null == place
+      place: freezed == place
           ? _value.place
           : place // ignore: cast_nullable_to_non_nullable
-              as String,
-      id_order: null == id_order
+              as String?,
+      id_order: freezed == id_order
           ? _value.id_order
           : id_order // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       package: freezed == package
           ? _value.package
           : package // ignore: cast_nullable_to_non_nullable
@@ -120,10 +120,10 @@ abstract class _$$_InfoOrderModelCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {String name,
+      {String? name,
       String? foto,
-      String place,
-      String id_order,
+      String? place,
+      String? id_order,
       String? package,
       String? marking_PartA,
       String? marking_PartB,
@@ -141,32 +141,32 @@ class __$$_InfoOrderModelCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = null,
+    Object? name = freezed,
     Object? foto = freezed,
-    Object? place = null,
-    Object? id_order = null,
+    Object? place = freezed,
+    Object? id_order = freezed,
     Object? package = freezed,
     Object? marking_PartA = freezed,
     Object? marking_PartB = freezed,
     Object? dop = freezed,
   }) {
     return _then(_$_InfoOrderModel(
-      name: null == name
+      name: freezed == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       foto: freezed == foto
           ? _value.foto
           : foto // ignore: cast_nullable_to_non_nullable
               as String?,
-      place: null == place
+      place: freezed == place
           ? _value.place
           : place // ignore: cast_nullable_to_non_nullable
-              as String,
-      id_order: null == id_order
+              as String?,
+      id_order: freezed == id_order
           ? _value.id_order
           : id_order // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       package: freezed == package
           ? _value.package
           : package // ignore: cast_nullable_to_non_nullable
@@ -191,10 +191,10 @@ class __$$_InfoOrderModelCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_InfoOrderModel implements _InfoOrderModel {
   const _$_InfoOrderModel(
-      {required this.name,
+      {this.name,
       this.foto,
-      required this.place,
-      required this.id_order,
+      this.place,
+      this.id_order,
       this.package,
       this.marking_PartA,
       this.marking_PartB,
@@ -204,13 +204,13 @@ class _$_InfoOrderModel implements _InfoOrderModel {
       _$$_InfoOrderModelFromJson(json);
 
   @override
-  final String name;
+  final String? name;
   @override
   final String? foto;
   @override
-  final String place;
+  final String? place;
   @override
-  final String id_order;
+  final String? id_order;
   @override
   final String? package;
   @override
@@ -264,10 +264,10 @@ class _$_InfoOrderModel implements _InfoOrderModel {
 
 abstract class _InfoOrderModel implements InfoOrderModel {
   const factory _InfoOrderModel(
-      {required final String name,
+      {final String? name,
       final String? foto,
-      required final String place,
-      required final String id_order,
+      final String? place,
+      final String? id_order,
       final String? package,
       final String? marking_PartA,
       final String? marking_PartB,
@@ -277,13 +277,13 @@ abstract class _InfoOrderModel implements InfoOrderModel {
       _$_InfoOrderModel.fromJson;
 
   @override
-  String get name;
+  String? get name;
   @override
   String? get foto;
   @override
-  String get place;
+  String? get place;
   @override
-  String get id_order;
+  String? get id_order;
   @override
   String? get package;
   @override

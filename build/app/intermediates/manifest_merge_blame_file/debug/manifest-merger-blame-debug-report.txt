@@ -13,17 +13,17 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/debug/AndroidManifest.xml:7:5-66
-15-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/debug/AndroidManifest.xml:7:22-64
+15-->/Users/dmitrijdemidov/GitHub/market_app/android/app/src/debug/AndroidManifest.xml:7:5-66
+15-->/Users/dmitrijdemidov/GitHub/market_app/android/app/src/debug/AndroidManifest.xml:7:22-64
 16    <uses-permission android:name="android.permission.VIBRATE" />
-16-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:3:5-65
-16-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:3:22-63
+16-->/Users/dmitrijdemidov/GitHub/market_app/android/app/src/main/AndroidManifest.xml:4:5-66
+16-->/Users/dmitrijdemidov/GitHub/market_app/android/app/src/main/AndroidManifest.xml:4:22-63
 17    <uses-permission android:name="android.permission.CAMERA" />
-17-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:4:5-65
-17-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:4:22-62
+17-->/Users/dmitrijdemidov/GitHub/market_app/android/app/src/main/AndroidManifest.xml:5:5-65
+17-->/Users/dmitrijdemidov/GitHub/market_app/android/app/src/main/AndroidManifest.xml:5:22-62
 18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
-18-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:5:5-80
-18-->/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/AndroidManifest.xml:5:22-77
+18-->/Users/dmitrijdemidov/GitHub/market_app/android/app/src/main/AndroidManifest.xml:6:5-80
+18-->/Users/dmitrijdemidov/GitHub/market_app/android/app/src/main/AndroidManifest.xml:6:22-77
 19    <uses-feature
 19-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:25:5-27:36
 20        android:name="android.hardware.camera"
@@ -77,98 +77,91 @@
 50            android:launchMode="singleTop"
 51            android:theme="@style/LaunchTheme"
 52            android:windowSoftInputMode="adjustResize" >
-53
-54            <!--
-55                 Specifies an Android theme to apply to this Activity as soon as
-56                 the Android process has started. This theme is visible to the user
-57                 while the Flutter UI initializes. After that, this theme continues
-58                 to determine the Window background behind the Flutter UI.
-59            -->
-60            <meta-data
-61                android:name="io.flutter.embedding.android.NormalTheme"
-62                android:resource="@style/NormalTheme" />
-63
-64            <intent-filter>
-65                <action android:name="android.intent.action.MAIN" />
-66
-67                <category android:name="android.intent.category.LAUNCHER" />
-68            </intent-filter>
-69        </activity>
-70        <!--
-71             Don't delete the meta-data below.
-72             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-73        -->
-74        <meta-data
-75            android:name="flutterEmbedding"
-76            android:value="2" />
-77
-78        <provider
-78-->[:image_picker_android] /Users/dmitrijdemidov/Desktop/market_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
-79            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-79-->[:image_picker_android] /Users/dmitrijdemidov/Desktop/market_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-82
-80            android:authorities="com.example.market_app.flutter.image_provider"
-80-->[:image_picker_android] /Users/dmitrijdemidov/Desktop/market_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
-81            android:exported="false"
-81-->[:image_picker_android] /Users/dmitrijdemidov/Desktop/market_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
-82            android:grantUriPermissions="true" >
-82-->[:image_picker_android] /Users/dmitrijdemidov/Desktop/market_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
-83            <meta-data
-83-->[:image_picker_android] /Users/dmitrijdemidov/Desktop/market_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:75
-84                android:name="android.support.FILE_PROVIDER_PATHS"
-84-->[:image_picker_android] /Users/dmitrijdemidov/Desktop/market_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
-85                android:resource="@xml/flutter_image_picker_file_paths" />
-85-->[:image_picker_android] /Users/dmitrijdemidov/Desktop/market_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-72
-86        </provider>
+53            <meta-data
+54                android:name="io.flutter.embedding.android.NormalTheme"
+55                android:resource="@style/NormalTheme" />
+56
+57            <intent-filter>
+58                <action android:name="android.intent.action.MAIN" />
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+61            </intent-filter>
+62        </activity>
+63        <!--
+64             Don't delete the meta-data below.
+65             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+66        -->
+67        <meta-data
+68            android:name="flutterEmbedding"
+69            android:value="2" />
+70
+71        <provider
+71-->[:image_picker_android] /Users/dmitrijdemidov/GitHub/market_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+72            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+72-->[:image_picker_android] /Users/dmitrijdemidov/GitHub/market_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-82
+73            android:authorities="com.example.market_app.flutter.image_provider"
+73-->[:image_picker_android] /Users/dmitrijdemidov/GitHub/market_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
+74            android:exported="false"
+74-->[:image_picker_android] /Users/dmitrijdemidov/GitHub/market_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+75            android:grantUriPermissions="true" >
+75-->[:image_picker_android] /Users/dmitrijdemidov/GitHub/market_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+76            <meta-data
+76-->[:image_picker_android] /Users/dmitrijdemidov/GitHub/market_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:75
+77                android:name="android.support.FILE_PROVIDER_PATHS"
+77-->[:image_picker_android] /Users/dmitrijdemidov/GitHub/market_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+78                android:resource="@xml/flutter_image_picker_file_paths" />
+78-->[:image_picker_android] /Users/dmitrijdemidov/GitHub/market_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-72
+79        </provider>
+80
+81        <uses-library
+81-->[androidx.window:window:1.0.0-beta04] /Users/dmitrijdemidov/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+82            android:name="androidx.window.extensions"
+82-->[androidx.window:window:1.0.0-beta04] /Users/dmitrijdemidov/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+83            android:required="false" />
+83-->[androidx.window:window:1.0.0-beta04] /Users/dmitrijdemidov/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+84        <uses-library
+84-->[androidx.window:window:1.0.0-beta04] /Users/dmitrijdemidov/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+85            android:name="androidx.window.sidecar"
+85-->[androidx.window:window:1.0.0-beta04] /Users/dmitrijdemidov/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+86            android:required="false" />
+86-->[androidx.window:window:1.0.0-beta04] /Users/dmitrijdemidov/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
 87
-88        <uses-library
-88-->[androidx.window:window:1.0.0-beta04] /Users/dmitrijdemidov/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
-89            android:name="androidx.window.extensions"
-89-->[androidx.window:window:1.0.0-beta04] /Users/dmitrijdemidov/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
-90            android:required="false" />
-90-->[androidx.window:window:1.0.0-beta04] /Users/dmitrijdemidov/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
-91        <uses-library
-91-->[androidx.window:window:1.0.0-beta04] /Users/dmitrijdemidov/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
-92            android:name="androidx.window.sidecar"
-92-->[androidx.window:window:1.0.0-beta04] /Users/dmitrijdemidov/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
-93            android:required="false" />
-93-->[androidx.window:window:1.0.0-beta04] /Users/dmitrijdemidov/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
-94
-95        <provider
-95-->[androidx.emoji2:emoji2:1.0.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/bd44fb57d7c3686a718759dd3e583490/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
-96            android:name="androidx.startup.InitializationProvider"
-96-->[androidx.emoji2:emoji2:1.0.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/bd44fb57d7c3686a718759dd3e583490/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
-97            android:authorities="com.example.market_app.androidx-startup"
-97-->[androidx.emoji2:emoji2:1.0.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/bd44fb57d7c3686a718759dd3e583490/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
-98            android:exported="false" >
-98-->[androidx.emoji2:emoji2:1.0.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/bd44fb57d7c3686a718759dd3e583490/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
-99            <meta-data
-99-->[androidx.emoji2:emoji2:1.0.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/bd44fb57d7c3686a718759dd3e583490/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
-100                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-100-->[androidx.emoji2:emoji2:1.0.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/bd44fb57d7c3686a718759dd3e583490/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
-101                android:value="androidx.startup" />
-101-->[androidx.emoji2:emoji2:1.0.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/bd44fb57d7c3686a718759dd3e583490/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
-102            <meta-data
-102-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/da12c36cbc191d2ddc924c1ef309570f/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
-103                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-103-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/da12c36cbc191d2ddc924c1ef309570f/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
-104                android:value="androidx.startup" />
-104-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/da12c36cbc191d2ddc924c1ef309570f/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
-105        </provider>
-106
-107        <activity
-107-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:47:9-53:63
-108            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-108-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:48:13-74
-109            android:clearTaskOnLaunch="true"
-109-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:49:13-45
-110            android:screenOrientation="sensorLandscape"
-110-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:50:13-56
-111            android:stateNotNeeded="true"
-111-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:51:13-42
-112            android:theme="@style/zxing_CaptureTheme"
-112-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:52:13-54
-113            android:windowSoftInputMode="stateAlwaysHidden" />
-113-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:53:13-60
-114    </application>
-115
-116</manifest>
+88        <provider
+88-->[androidx.emoji2:emoji2:1.0.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/bd44fb57d7c3686a718759dd3e583490/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+89            android:name="androidx.startup.InitializationProvider"
+89-->[androidx.emoji2:emoji2:1.0.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/bd44fb57d7c3686a718759dd3e583490/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+90            android:authorities="com.example.market_app.androidx-startup"
+90-->[androidx.emoji2:emoji2:1.0.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/bd44fb57d7c3686a718759dd3e583490/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+91            android:exported="false" >
+91-->[androidx.emoji2:emoji2:1.0.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/bd44fb57d7c3686a718759dd3e583490/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+92            <meta-data
+92-->[androidx.emoji2:emoji2:1.0.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/bd44fb57d7c3686a718759dd3e583490/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+93                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+93-->[androidx.emoji2:emoji2:1.0.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/bd44fb57d7c3686a718759dd3e583490/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+94                android:value="androidx.startup" />
+94-->[androidx.emoji2:emoji2:1.0.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/bd44fb57d7c3686a718759dd3e583490/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+95            <meta-data
+95-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/da12c36cbc191d2ddc924c1ef309570f/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+96                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+96-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/da12c36cbc191d2ddc924c1ef309570f/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+97                android:value="androidx.startup" />
+97-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/da12c36cbc191d2ddc924c1ef309570f/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+98        </provider>
+99
+100        <activity
+100-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:47:9-53:63
+101            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+101-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:48:13-74
+102            android:clearTaskOnLaunch="true"
+102-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:49:13-45
+103            android:screenOrientation="sensorLandscape"
+103-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:50:13-56
+104            android:stateNotNeeded="true"
+104-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:51:13-42
+105            android:theme="@style/zxing_CaptureTheme"
+105-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:52:13-54
+106            android:windowSoftInputMode="stateAlwaysHidden" />
+106-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/dmitrijdemidov/.gradle/caches/transforms-3/a8fb2b2b7b53df54e4065a4485931292/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:53:13-60
+107    </application>
+108
+109</manifest>

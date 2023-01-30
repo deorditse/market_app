@@ -10,10 +10,10 @@ part 'info_order_model.g.dart';
 @freezed
 class InfoOrderModel with _$InfoOrderModel {
   const factory InfoOrderModel({
-    required String name,
+    String? name,
     String? foto,
-    required String place,
-    required String id_order,
+    String? place,
+     String? id_order,
     String? package,
     String? marking_PartA,
     String? marking_PartB,

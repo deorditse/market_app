@@ -17,18 +17,17 @@ Future<void> main() async {
   // FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   await initializeDateFormatting();
   await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-  runApp(const MarketplaceApp());
+  runApp(MarketplaceApp());
 }
 
 //flutter create --template=package
 
 class MarketplaceApp extends StatelessWidget {
-  const MarketplaceApp({Key? key}) : super(key: key);
+  MarketplaceApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return BlocProvider<AuthBloc>(
-      lazy: false,
       create: (_) => AuthBloc()..add(InitialAuthEvent()),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
@@ -71,11 +70,11 @@ class MainPage extends StatelessWidget {
           FocusManager.instance.primaryFocus?.unfocus();
         },
         child: BlocBuilder<AuthBloc, AuthState>(
-          builder: (_, state) {
+          builder: (context, state) {
             if (state.isSignIn) {
-              return HomePage();
+              return const HomePage();
             } else {
-              return AuthPage();
+              return const AuthPage();
             }
           },
         ),
@@ -83,7 +82,6 @@ class MainPage extends StatelessWidget {
     );
   }
 }
-
 
 //
 // <key>io.flutter.embedded_views_preview</key>
@@ -139,4 +137,3 @@ class MainPage extends StatelessWidget {
 // <true/>
 // </dict>
 // </plist>
-

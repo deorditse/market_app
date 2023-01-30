@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:market_app/packages/data_layout/lib/src/configuration_file.dart';
 import 'package:market_app/packages/ui_layout/style_app/consts_app.dart';
 import 'package:market_app/packages/ui_layout/style_app/style_buttons.dart';
 

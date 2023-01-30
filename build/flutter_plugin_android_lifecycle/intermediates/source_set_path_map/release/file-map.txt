@@ -4,9 +4,9 @@ io.flutter.plugins.flutter_plugin_android_lifecycle-jetified-annotation-experime
 io.flutter.plugins.flutter_plugin_android_lifecycle-jetified-window-1.0.0-beta04-3 /Users/dmitrijdemidov/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/res
 io.flutter.plugins.flutter_plugin_android_lifecycle-main-4 /Users/dmitrijdemidov/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-2.0.7/android/src/main/res
 io.flutter.plugins.flutter_plugin_android_lifecycle-release-5 /Users/dmitrijdemidov/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-2.0.7/android/src/release/res
-io.flutter.plugins.flutter_plugin_android_lifecycle-pngs-6 /Users/dmitrijdemidov/Desktop/market_app/build/flutter_plugin_android_lifecycle/generated/res/pngs/release
-io.flutter.plugins.flutter_plugin_android_lifecycle-resValues-7 /Users/dmitrijdemidov/Desktop/market_app/build/flutter_plugin_android_lifecycle/generated/res/resValues/release
-io.flutter.plugins.flutter_plugin_android_lifecycle-rs-8 /Users/dmitrijdemidov/Desktop/market_app/build/flutter_plugin_android_lifecycle/generated/res/rs/release
-io.flutter.plugins.flutter_plugin_android_lifecycle-mergeReleaseResources-9 /Users/dmitrijdemidov/Desktop/market_app/build/flutter_plugin_android_lifecycle/intermediates/incremental/release/mergeReleaseResources/merged.dir
-io.flutter.plugins.flutter_plugin_android_lifecycle-mergeReleaseResources-10 /Users/dmitrijdemidov/Desktop/market_app/build/flutter_plugin_android_lifecycle/intermediates/incremental/release/mergeReleaseResources/stripped.dir
-io.flutter.plugins.flutter_plugin_android_lifecycle-merged_res-11 /Users/dmitrijdemidov/Desktop/market_app/build/flutter_plugin_android_lifecycle/intermediates/merged_res/release
+io.flutter.plugins.flutter_plugin_android_lifecycle-pngs-6 /Users/dmitrijdemidov/GitHub/market_app/build/flutter_plugin_android_lifecycle/generated/res/pngs/release
+io.flutter.plugins.flutter_plugin_android_lifecycle-resValues-7 /Users/dmitrijdemidov/GitHub/market_app/build/flutter_plugin_android_lifecycle/generated/res/resValues/release
+io.flutter.plugins.flutter_plugin_android_lifecycle-rs-8 /Users/dmitrijdemidov/GitHub/market_app/build/flutter_plugin_android_lifecycle/generated/res/rs/release
+io.flutter.plugins.flutter_plugin_android_lifecycle-mergeReleaseResources-9 /Users/dmitrijdemidov/GitHub/market_app/build/flutter_plugin_android_lifecycle/intermediates/incremental/release/mergeReleaseResources/merged.dir
+io.flutter.plugins.flutter_plugin_android_lifecycle-mergeReleaseResources-10 /Users/dmitrijdemidov/GitHub/market_app/build/flutter_plugin_android_lifecycle/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+io.flutter.plugins.flutter_plugin_android_lifecycle-merged_res-11 /Users/dmitrijdemidov/GitHub/market_app/build/flutter_plugin_android_lifecycle/intermediates/merged_res/release

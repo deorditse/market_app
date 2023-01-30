@@ -40,25 +40,6 @@
                     }
                 },
                 {
-                    "source": "/Users/dmitrijdemidov/Desktop/market_app/android/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "173,818",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "476,982"
-                    },
-                    "to": {
-                        "startLines": "1428,1432",
-                        "startColumns": "4,4",
-                        "startOffsets": "91773,91954",
-                        "endLines": "1431,1434",
-                        "endColumns": "12,12",
-                        "endOffsets": "91949,92118"
-                    }
-                },
-                {
                     "source": "/Users/dmitrijdemidov/.gradle/caches/transforms-3/9db0c0a9f4720bfec9548843d6d7712f/transformed/jetified-appcompat-resources-1.4.2/res/values/values.xml",
                     "from": {
                         "startLines": "2,29,36,47,74",
@@ -166,6 +147,25 @@
                         "startOffsets": "20564",
                         "endColumns": "82",
                         "endOffsets": "20642"
+                    }
+                },
+                {
+                    "source": "/Users/dmitrijdemidov/GitHub/market_app/android/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "173,818",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "476,982"
+                    },
+                    "to": {
+                        "startLines": "1428,1432",
+                        "startColumns": "4,4",
+                        "startOffsets": "91773,91954",
+                        "endLines": "1431,1434",
+                        "endColumns": "12,12",
+                        "endOffsets": "91949,92118"
                     }
                 },
                 {

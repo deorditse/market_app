@@ -12,24 +12,41 @@ class HomePageRepo {
     required String userName,
     required String password,
   }) async {
-    String basicAuth =
-        'Basic ${base64.encode(utf8.encode('$userName:$password'))}';
+    try {
+      String basicAuth =
+          'Basic ${base64.encode(utf8.encode('$userName:$password'))}';
 
-    var response = http.post(
-      urlMain(urlPath: '${location.name}/getroom/GetInfo'),
-      headers: {
-        'Authorization': basicAuth,
-        'Content-Type': 'application/json',
-      },
-    );
-    return await genericRequestHttp<String>(
-      nameMethod: 'getListRooms',
-      setResponse: response,
-    );
+      var response = await http.post(
+        urlMain(urlPath: '${location.name}/getroom/GetInfo'),
+        headers: {
+          'Authorization': basicAuth,
+          'Content-Type': 'application/json',
+        },
+      );
+
+      final jsonData = json.decode(utf8.decode(response.body.codeUnits));
+
+      if (response.statusCode == 200) {
+        return {
+          200: jsonData,
+        };
+      } else {
+        return theRequestFailed(
+          nameMethod: "getListRooms",
+          responseStatus: response.statusCode,
+          data: response.body.toString(),
+        );
+      }
+    } catch (error) {
+      return errorRequest(
+        error: error,
+        nameMethod: "getListRooms",
+      );
+    }
   }
 
 //Роут для получения тасок
-  Future<Map<int, dynamic>?> getListTasks({
+  Future<Map> getListTasks({
     required Location location,
     required String userName,
     required String password,
@@ -38,20 +55,38 @@ class HomePageRepo {
     String basicAuth =
         'Basic ${base64.encode(utf8.encode('$userName:$password'))}';
 
-    var response = http.post(
-      urlMain(urlPath: '${location.name}/getorder/GetInfo'),
-      // Uri.http("176.113.82.105/center/hs/Obmen/v1/getorder/GetInfo"),
-      body: json.encode({"room": roomName}),
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': basicAuth,
-      },
-    );
+    try {
+      var response = await http.post(
+        urlMain(urlPath: '${location.name}/getorder/GetInfo'),
+        // Uri.http("176.113.82.105/center/hs/Obmen/v1/getorder/GetInfo"),
+        body: json.encode({"room": roomName}),
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': basicAuth,
+        },
+      );
+      final jsonData = json.decode(utf8.decode(response.body.codeUnits));
 
-    return await genericRequestHttp<List<InfoOrderModel>>(
-      nameMethod: 'getListTasks',
-      setResponse: response,
-    );
+      // List<String> jsonData = json.decode(utf8.decode(response.body.codeUnits));
+
+      if (response.statusCode == 200) {
+        List<InfoOrderModel> listTasks =
+            await jsonData.map((e) => InfoOrderModel.fromJson(e)).toList();
+        print(listTasks);
+        return {200: jsonData};
+      } else {
+        return theRequestFailed(
+          nameMethod: "getListTasks",
+          responseStatus: response.statusCode,
+          data: response.body.toString(),
+        );
+      }
+    } catch (error) {
+      return errorRequest(
+        error: error,
+        nameMethod: "getListTasks",
+      );
+    }
   }
 
   //Роут для печати orders
@@ -61,23 +96,36 @@ class HomePageRepo {
     required String password,
     required Set<String> listIdOrders,
   }) async {
-    String basicAuth =
-        'Basic ${base64.encode(utf8.encode('$userName:$password'))}';
+    try {
+      String basicAuth =
+          'Basic ${base64.encode(utf8.encode('$userName:$password'))}';
 
-    var response = http.post(
-      urlMain(urlPath: '${location.name}/print/GetInfo'),
-      body: json.encode({
-        "name": userName,
-        "listIdOrders": listIdOrders.toList().toString(),
-      }),
-      headers: {
-        'Authorization': basicAuth,
-      },
-    );
-    return await genericRequestHttp<String>(
-      nameMethod: 'addPrintOrders',
-      setResponse: response,
-    );
+      var response = await http.post(
+        urlMain(urlPath: '${location.name}/print/GetInfo'),
+        body: json.encode({
+          "name": userName,
+          "listIdOrders": listIdOrders.toList().toString(),
+        }),
+        headers: {'Authorization': basicAuth},
+      );
+
+      final jsonData = json.decode(utf8.decode(response.body.codeUnits));
+
+      if (response.statusCode == 200) {
+        return {200: jsonData};
+      } else {
+        return theRequestFailed(
+          nameMethod: "addPrintOrders",
+          responseStatus: response.statusCode,
+          data: response.body.toString(),
+        );
+      }
+    } catch (error) {
+      return errorRequest(
+        error: error,
+        nameMethod: "addPrintOrders",
+      );
+    }
   }
 
   //отметить проблемный заказ
@@ -87,27 +135,38 @@ class HomePageRepo {
     required String password,
     required InfoOrderModel problemOrder,
   }) async {
-    String basicAuth =
-        'Basic ${base64.encode(utf8.encode('$userName:$password'))}';
+    try {
+      String basicAuth =
+          'Basic ${base64.encode(utf8.encode('$userName:$password'))}';
 
-    var post = http.post(
-      urlMain(urlPath: '${location.name}/problem/GetInfo'),
-      body: json.encode({
-        "name": userName,
-        "Nomenclature": problemOrder.name,
-        "id_order": problemOrder.id_order,
-        "marking_PartA": problemOrder.marking_PartA,
-        "marking_PartB": problemOrder.marking_PartB,
-      }),
-      headers: {
-        'Authorization': basicAuth,
-      },
-    );
-    var response = post;
-    return await genericRequestHttp<String>(
-      nameMethod: 'addProblemOrder',
-      setResponse: response,
-    );
+      var response = await http.post(
+        urlMain(urlPath: '${location.name}/problem/GetInfo'),
+        body: json.encode({
+          "name": userName,
+          "Nomenclature": problemOrder.name,
+          "id_order": problemOrder.id_order,
+          "marking_PartA": problemOrder.marking_PartA,
+          "marking_PartB": problemOrder.marking_PartB,
+        }),
+        headers: {'Authorization': basicAuth},
+      );
+      final jsonData = json.decode(utf8.decode(response.body.codeUnits));
+
+      if (response.statusCode == 200) {
+        return {200: jsonData};
+      } else {
+        return theRequestFailed(
+          nameMethod: "addProblemOrder",
+          responseStatus: response.statusCode,
+          data: response.body.toString(),
+        );
+      }
+    } catch (error) {
+      return errorRequest(
+        error: error,
+        nameMethod: "addProblemOrder",
+      );
+    }
   }
 
   //отправить выполненные заказы
@@ -117,23 +176,36 @@ class HomePageRepo {
     required String password,
     required List<String> listCompletedOrders,
   }) async {
-    String basicAuth =
-        'Basic ${base64.encode(utf8.encode('$userName:$password'))}';
+    try {
+      String basicAuth =
+          'Basic ${base64.encode(utf8.encode('$userName:$password'))}';
 
-    var post = http.post(
-      urlMain(urlPath: '${location.name}/ready/GetInfo'),
-      body: json.encode({
-        "name": userName,
-        "listIdOrders": listCompletedOrders.toString(),
-      }),
-      headers: {
-        'Authorization': basicAuth,
-      },
-    );
-    var response = post;
-    return await genericRequestHttp<String>(
-      nameMethod: 'sendCompletedOrdersToTheServer',
-      setResponse: response,
-    );
+      var response = await http.post(
+        urlMain(urlPath: '${location.name}/ready/GetInfo'),
+        body: json.encode({
+          "name": userName,
+          "listIdOrders": listCompletedOrders.toString(),
+        }),
+        headers: {
+          'Authorization': basicAuth,
+        },
+      );
+      final jsonData = json.decode(utf8.decode(response.body.codeUnits));
+
+      if (response.statusCode == 200) {
+        return {200: jsonData};
+      } else {
+        return theRequestFailed(
+          nameMethod: "sendCompletedOrdersToTheServer",
+          responseStatus: response.statusCode,
+          data: response.body.toString(),
+        );
+      }
+    } catch (error) {
+      return errorRequest(
+        error: error,
+        nameMethod: "sendCompletedOrdersToTheServer",
+      );
+    }
   }
 }

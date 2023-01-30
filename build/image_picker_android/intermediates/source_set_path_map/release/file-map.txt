@@ -5,10 +5,10 @@ io.flutter.plugins.imagepicker.image_picker_android-jetified-annotation-experime
 io.flutter.plugins.imagepicker.image_picker_android-jetified-window-1.0.0-beta04-4 /Users/dmitrijdemidov/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/res
 io.flutter.plugins.imagepicker.image_picker_android-main-5 /Users/dmitrijdemidov/.pub-cache/hosted/pub.dartlang.org/image_picker_android-0.8.5+5/android/src/main/res
 io.flutter.plugins.imagepicker.image_picker_android-release-6 /Users/dmitrijdemidov/.pub-cache/hosted/pub.dartlang.org/image_picker_android-0.8.5+5/android/src/release/res
-io.flutter.plugins.imagepicker.image_picker_android-packaged_res-7 /Users/dmitrijdemidov/Desktop/market_app/build/flutter_plugin_android_lifecycle/intermediates/packaged_res/release
-io.flutter.plugins.imagepicker.image_picker_android-pngs-8 /Users/dmitrijdemidov/Desktop/market_app/build/image_picker_android/generated/res/pngs/release
-io.flutter.plugins.imagepicker.image_picker_android-resValues-9 /Users/dmitrijdemidov/Desktop/market_app/build/image_picker_android/generated/res/resValues/release
-io.flutter.plugins.imagepicker.image_picker_android-rs-10 /Users/dmitrijdemidov/Desktop/market_app/build/image_picker_android/generated/res/rs/release
-io.flutter.plugins.imagepicker.image_picker_android-mergeReleaseResources-11 /Users/dmitrijdemidov/Desktop/market_app/build/image_picker_android/intermediates/incremental/release/mergeReleaseResources/merged.dir
-io.flutter.plugins.imagepicker.image_picker_android-mergeReleaseResources-12 /Users/dmitrijdemidov/Desktop/market_app/build/image_picker_android/intermediates/incremental/release/mergeReleaseResources/stripped.dir
-io.flutter.plugins.imagepicker.image_picker_android-merged_res-13 /Users/dmitrijdemidov/Desktop/market_app/build/image_picker_android/intermediates/merged_res/release
+io.flutter.plugins.imagepicker.image_picker_android-packaged_res-7 /Users/dmitrijdemidov/GitHub/market_app/build/flutter_plugin_android_lifecycle/intermediates/packaged_res/release
+io.flutter.plugins.imagepicker.image_picker_android-pngs-8 /Users/dmitrijdemidov/GitHub/market_app/build/image_picker_android/generated/res/pngs/release
+io.flutter.plugins.imagepicker.image_picker_android-resValues-9 /Users/dmitrijdemidov/GitHub/market_app/build/image_picker_android/generated/res/resValues/release
+io.flutter.plugins.imagepicker.image_picker_android-rs-10 /Users/dmitrijdemidov/GitHub/market_app/build/image_picker_android/generated/res/rs/release
+io.flutter.plugins.imagepicker.image_picker_android-mergeReleaseResources-11 /Users/dmitrijdemidov/GitHub/market_app/build/image_picker_android/intermediates/incremental/release/mergeReleaseResources/merged.dir
+io.flutter.plugins.imagepicker.image_picker_android-mergeReleaseResources-12 /Users/dmitrijdemidov/GitHub/market_app/build/image_picker_android/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+io.flutter.plugins.imagepicker.image_picker_android-merged_res-13 /Users/dmitrijdemidov/GitHub/market_app/build/image_picker_android/intermediates/merged_res/release

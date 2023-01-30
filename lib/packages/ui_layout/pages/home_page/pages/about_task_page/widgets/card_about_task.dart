@@ -43,7 +43,7 @@ class CardAboutTask extends StatelessWidget {
               children: [
                 // SizedBox(width: myWithBetweenContent),
                 Text(
-                  aboutOrders.place,
+                  aboutOrders.place ?? "-",
                   overflow: TextOverflow.ellipsis,
                   style: myTextStyleFontS8Sans(
                     context: context,

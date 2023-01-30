@@ -8,10 +8,10 @@ part of 'info_order_model.dart';
 
 _$_InfoOrderModel _$$_InfoOrderModelFromJson(Map<String, dynamic> json) =>
     _$_InfoOrderModel(
-      name: json['name'] as String,
+      name: json['name'] as String?,
       foto: json['foto'] as String?,
-      place: json['place'] as String,
-      id_order: json['id_order'] as String,
+      place: json['place'] as String?,
+      id_order: json['id_order'] as String?,
       package: json['package'] as String?,
       marking_PartA: json['marking_PartA'] as String?,
       marking_PartB: json['marking_PartB'] as String?,

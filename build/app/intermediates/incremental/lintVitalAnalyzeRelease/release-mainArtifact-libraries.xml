@@ -1,13 +1,13 @@
 <libraries>
   <library
-      name="__local_aars__:/Users/dmitrijdemidov/Desktop/market_app/build/app/intermediates/flutter/release/libs.jar:unspecified@jar"
-      jars="/Users/dmitrijdemidov/Desktop/market_app/build/app/intermediates/flutter/release/libs.jar"
-      resolved="__local_aars__:/Users/dmitrijdemidov/Desktop/market_app/build/app/intermediates/flutter/release/libs.jar:unspecified"/>
+      name="__local_aars__:/Users/dmitrijdemidov/GitHub/market_app/build/app/intermediates/flutter/release/libs.jar:unspecified@jar"
+      jars="/Users/dmitrijdemidov/GitHub/market_app/build/app/intermediates/flutter/release/libs.jar"
+      resolved="__local_aars__:/Users/dmitrijdemidov/GitHub/market_app/build/app/intermediates/flutter/release/libs.jar:unspecified"/>
   <library
-      name="/Users/dmitrijdemidov/Desktop/market_app/android@@:permission_handler_android::release"
-      jars="/Users/dmitrijdemidov/Desktop/market_app/build/permission_handler_android/.transforms/0468eb952e421e572f719971fcf287bb/transformed/out/jars/classes.jar"
+      name="/Users/dmitrijdemidov/GitHub/market_app/android@@:permission_handler_android::release"
+      jars="/Users/dmitrijdemidov/GitHub/market_app/build/permission_handler_android/.transforms/0375d8f7de0df7b36e21207962e3d183/transformed/out/jars/classes.jar"
       resolved="com.baseflow.permissionhandler:permission_handler_android:unspecified"
-      folder="/Users/dmitrijdemidov/Desktop/market_app/build/permission_handler_android/.transforms/0468eb952e421e572f719971fcf287bb/transformed/out"
+      folder="/Users/dmitrijdemidov/GitHub/market_app/build/permission_handler_android/.transforms/0375d8f7de0df7b36e21207962e3d183/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -17,10 +17,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/dmitrijdemidov/Desktop/market_app/android@@:flutter_plugin_android_lifecycle::release"
-      jars="/Users/dmitrijdemidov/Desktop/market_app/build/flutter_plugin_android_lifecycle/.transforms/7f04cfbe19c83257e524d1bc7ae634bd/transformed/out/jars/classes.jar"
+      name="/Users/dmitrijdemidov/GitHub/market_app/android@@:flutter_plugin_android_lifecycle::release"
+      jars="/Users/dmitrijdemidov/GitHub/market_app/build/flutter_plugin_android_lifecycle/.transforms/2525caa123e6628b305755fa007e5d59/transformed/out/jars/classes.jar"
       resolved="io.flutter.plugins.flutter_plugin_android_lifecycle:flutter_plugin_android_lifecycle:unspecified"
-      folder="/Users/dmitrijdemidov/Desktop/market_app/build/flutter_plugin_android_lifecycle/.transforms/7f04cfbe19c83257e524d1bc7ae634bd/transformed/out"
+      folder="/Users/dmitrijdemidov/GitHub/market_app/build/flutter_plugin_android_lifecycle/.transforms/2525caa123e6628b305755fa007e5d59/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -30,10 +30,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/dmitrijdemidov/Desktop/market_app/android@@:sqflite::release"
-      jars="/Users/dmitrijdemidov/Desktop/market_app/build/sqflite/.transforms/00a006f842fef4515d0466acc0dc534f/transformed/out/jars/classes.jar"
+      name="/Users/dmitrijdemidov/GitHub/market_app/android@@:sqflite::release"
+      jars="/Users/dmitrijdemidov/GitHub/market_app/build/sqflite/.transforms/b687e6dbd4f52e61c891529e6ff6dc6a/transformed/out/jars/classes.jar"
       resolved="com.tekartik.sqflite:sqflite:unspecified"
-      folder="/Users/dmitrijdemidov/Desktop/market_app/build/sqflite/.transforms/00a006f842fef4515d0466acc0dc534f/transformed/out"
+      folder="/Users/dmitrijdemidov/GitHub/market_app/build/sqflite/.transforms/b687e6dbd4f52e61c891529e6ff6dc6a/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -43,10 +43,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/dmitrijdemidov/Desktop/market_app/android@@:path_provider_android::release"
-      jars="/Users/dmitrijdemidov/Desktop/market_app/build/path_provider_android/.transforms/7660c83892e5b4e3bb4e25d5ede2c32b/transformed/out/jars/classes.jar"
+      name="/Users/dmitrijdemidov/GitHub/market_app/android@@:path_provider_android::release"
+      jars="/Users/dmitrijdemidov/GitHub/market_app/build/path_provider_android/.transforms/7a909a6fc7baf5989c0a009f07ee3946/transformed/out/jars/classes.jar"
       resolved="io.flutter.plugins.pathprovider:path_provider_android:unspecified"
-      folder="/Users/dmitrijdemidov/Desktop/market_app/build/path_provider_android/.transforms/7660c83892e5b4e3bb4e25d5ede2c32b/transformed/out"
+      folder="/Users/dmitrijdemidov/GitHub/market_app/build/path_provider_android/.transforms/7a909a6fc7baf5989c0a009f07ee3946/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -56,10 +56,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/dmitrijdemidov/Desktop/market_app/android@@:qr_code_scanner::release"
-      jars="/Users/dmitrijdemidov/Desktop/market_app/build/qr_code_scanner/.transforms/324cd04e69df643031caefa5a3b578ae/transformed/out/jars/classes.jar"
+      name="/Users/dmitrijdemidov/GitHub/market_app/android@@:qr_code_scanner::release"
+      jars="/Users/dmitrijdemidov/GitHub/market_app/build/qr_code_scanner/.transforms/be6bad8269d328c1b4d9ceb6d28c6658/transformed/out/jars/classes.jar"
       resolved="net.touchcapture.qr.flutterqr:qr_code_scanner:unspecified"
-      folder="/Users/dmitrijdemidov/Desktop/market_app/build/qr_code_scanner/.transforms/324cd04e69df643031caefa5a3b578ae/transformed/out"
+      folder="/Users/dmitrijdemidov/GitHub/market_app/build/qr_code_scanner/.transforms/be6bad8269d328c1b4d9ceb6d28c6658/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -69,10 +69,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/dmitrijdemidov/Desktop/market_app/android@@:vibration::release"
-      jars="/Users/dmitrijdemidov/Desktop/market_app/build/vibration/.transforms/381eb045293078afe21c82910d17f8cd/transformed/out/jars/classes.jar"
+      name="/Users/dmitrijdemidov/GitHub/market_app/android@@:vibration::release"
+      jars="/Users/dmitrijdemidov/GitHub/market_app/build/vibration/.transforms/6d8f93fe6f80e91aec5ab3e517dbf3c5/transformed/out/jars/classes.jar"
       resolved="com.benjaminabel.vibration:vibration:unspecified"
-      folder="/Users/dmitrijdemidov/Desktop/market_app/build/vibration/.transforms/381eb045293078afe21c82910d17f8cd/transformed/out"
+      folder="/Users/dmitrijdemidov/GitHub/market_app/build/vibration/.transforms/6d8f93fe6f80e91aec5ab3e517dbf3c5/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -82,10 +82,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/dmitrijdemidov/Desktop/market_app/android@@:image_picker_android::release"
-      jars="/Users/dmitrijdemidov/Desktop/market_app/build/image_picker_android/.transforms/d9d496ffbdb354c413e868ed693d6f28/transformed/out/jars/classes.jar"
+      name="/Users/dmitrijdemidov/GitHub/market_app/android@@:image_picker_android::release"
+      jars="/Users/dmitrijdemidov/GitHub/market_app/build/image_picker_android/.transforms/53426b26e212b094a060a52cd3c1b774/transformed/out/jars/classes.jar"
       resolved="io.flutter.plugins.imagepicker:image_picker_android:unspecified"
-      folder="/Users/dmitrijdemidov/Desktop/market_app/build/image_picker_android/.transforms/d9d496ffbdb354c413e868ed693d6f28/transformed/out"
+      folder="/Users/dmitrijdemidov/GitHub/market_app/build/image_picker_android/.transforms/53426b26e212b094a060a52cd3c1b774/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -95,10 +95,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/dmitrijdemidov/Desktop/market_app/android@@:flutter_secure_storage::release"
-      jars="/Users/dmitrijdemidov/Desktop/market_app/build/flutter_secure_storage/.transforms/a59e29288b9af366b752a05beec2f851/transformed/out/jars/classes.jar"
+      name="/Users/dmitrijdemidov/GitHub/market_app/android@@:flutter_secure_storage::release"
+      jars="/Users/dmitrijdemidov/GitHub/market_app/build/flutter_secure_storage/.transforms/c0ddf3d8959825570d390a4b51259055/transformed/out/jars/classes.jar"
       resolved="com.it_nomads.fluttersecurestorage:flutter_secure_storage:unspecified"
-      folder="/Users/dmitrijdemidov/Desktop/market_app/build/flutter_secure_storage/.transforms/a59e29288b9af366b752a05beec2f851/transformed/out"
+      folder="/Users/dmitrijdemidov/GitHub/market_app/build/flutter_secure_storage/.transforms/c0ddf3d8959825570d390a4b51259055/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -153,14 +153,6 @@
       name="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10@jar"
       jars="/Users/dmitrijdemidov/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.7.10/1ef73fee66f45d52c67e2aca12fd945dbe0659bf/kotlin-stdlib-jdk7-1.7.10.jar"
       resolved="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10"/>
-  <library
-      name="io.flutter:armeabi_v7a_release:1.0.0-3950c6140a3f1cb295364b0446627bd3a1736915@jar"
-      jars="/Users/dmitrijdemidov/.gradle/caches/modules-2/files-2.1/io.flutter/armeabi_v7a_release/1.0.0-3950c6140a3f1cb295364b0446627bd3a1736915/c55de3312bb5fa0f09388320477e1d7032a8c68c/armeabi_v7a_release-1.0.0-3950c6140a3f1cb295364b0446627bd3a1736915.jar"
-      resolved="io.flutter:armeabi_v7a_release:1.0.0-3950c6140a3f1cb295364b0446627bd3a1736915"/>
-  <library
-      name="io.flutter:arm64_v8a_release:1.0.0-3950c6140a3f1cb295364b0446627bd3a1736915@jar"
-      jars="/Users/dmitrijdemidov/.gradle/caches/modules-2/files-2.1/io.flutter/arm64_v8a_release/1.0.0-3950c6140a3f1cb295364b0446627bd3a1736915/9a268b5fc4f7d425800557fab7f67a4e20f421fe/arm64_v8a_release-1.0.0-3950c6140a3f1cb295364b0446627bd3a1736915.jar"
-      resolved="io.flutter:arm64_v8a_release:1.0.0-3950c6140a3f1cb295364b0446627bd3a1736915"/>
   <library
       name="io.flutter:x86_64_release:1.0.0-3950c6140a3f1cb295364b0446627bd3a1736915@jar"
       jars="/Users/dmitrijdemidov/.gradle/caches/modules-2/files-2.1/io.flutter/x86_64_release/1.0.0-3950c6140a3f1cb295364b0446627bd3a1736915/f9d6b459739620ac99192930076c720853889115/x86_64_release-1.0.0-3950c6140a3f1cb295364b0446627bd3a1736915.jar"

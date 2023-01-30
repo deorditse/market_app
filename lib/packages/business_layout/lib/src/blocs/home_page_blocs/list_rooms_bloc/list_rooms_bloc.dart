@@ -32,8 +32,8 @@ class ListRoomsBloc extends Bloc<ListRoomsEvent, ListRoomsState> {
     );
 
     if (responseFromServer?.keys.first == 200) {
-      List<String> listRooms = List<String>.from(
-          await json.decode(responseFromServer!.values.first.toString()));
+      List<String> listRooms =
+          List<String>.from(responseFromServer!.values.first);
       emit(
         ListRoomsState(
           listRooms: listRooms,

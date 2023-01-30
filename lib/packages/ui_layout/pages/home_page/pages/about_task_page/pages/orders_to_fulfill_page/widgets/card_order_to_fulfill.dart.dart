@@ -111,7 +111,7 @@ class CardOrderToFulfill extends StatelessWidget {
                                             MainAxisAlignment.spaceBetween,
                                         children: [
                                           Text(
-                                            infoOrder.place,
+                                            infoOrder.place ?? "-",
                                             overflow: TextOverflow.ellipsis,
                                             style: myTextStyleFontS8Sans(
                                               context: context,
@@ -128,7 +128,7 @@ class CardOrderToFulfill extends StatelessWidget {
                                           ),
                                           Expanded(child: Container()),
                                           Text(
-                                            infoOrder.name,
+                                            infoOrder.name ?? "",
                                             style: myTextStyleFontS8Sans(
                                               context: context,
                                               fontSize: 10,
@@ -259,32 +259,3 @@ class CardOrderToFulfill extends StatelessWidget {
   }
 }
 
-//отметить проблемный заказ
-Future<Map<int, dynamic>?> addProblemOrder({
-  required Location location,
-  required String userName,
-  required String password,
-  required InfoOrderModel problemOrder,
-}) async {
-  String basicAuth =
-      'Basic ${base64.encode(utf8.encode('$userName:$password'))}';
-
-  var post = http.post(
-    urlMain(urlPath: '${location.name}/problem/GetInfo'),
-    body: json.encode({
-      "name": userName,
-      "Nomenclature": problemOrder.name,
-      "id_order": problemOrder.id_order,
-      "marking_PartA": problemOrder.marking_PartA,
-      "marking_PartB": problemOrder.marking_PartB,
-    }),
-    headers: {
-      'Authorization': basicAuth,
-    },
-  );
-  var response = post;
-  return await genericRequestHttp<String>(
-    nameMethod: 'addProblemOrder',
-    setResponse: response,
-  );
-}

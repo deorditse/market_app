@@ -28,9 +28,18 @@ class AboutTaskBlocs extends Bloc<AboutTaskEvent, ListAboutTasksInitialState> {
       password: event.password,
       roomName: event.room,
     );
-    if (responseServer?.keys.first == 200) {
+    if (responseServer?.keys.first == 200 ) {
+
       List<InfoOrderModel> listAboutTasks =
           List<InfoOrderModel>.from(responseServer!.values.first);
+
+      if(listAboutTasks.first.id_order == null){
+        emit(
+          ErrorListAboutTasksInitialState(
+            errorMessage: "ID orders не заданы",
+          ),
+        );
+      }
       if (listAboutTasks.isNotEmpty) {
         Map<String, List<InfoOrderModel>> mapPlaceAndListInfoOrderModel = {};
 
@@ -39,7 +48,9 @@ class AboutTaskBlocs extends Bloc<AboutTaskEvent, ListAboutTasksInitialState> {
               mapPlaceAndListInfoOrderModel[infoOrder.place]!.isNotEmpty) {
             mapPlaceAndListInfoOrderModel[infoOrder.place]!.add(infoOrder);
           } else {
-            mapPlaceAndListInfoOrderModel[infoOrder.place] = [infoOrder];
+            if (infoOrder.place != null) {
+              mapPlaceAndListInfoOrderModel[infoOrder.place!] = [infoOrder];
+            }
           }
           emit(
             ListAboutTasksState(

@@ -24,7 +24,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     emit(const AuthState(isLoading: true));
     print("LoadingAuthState");
 
-    final authResponse = await _authRepo.signInAuthData(
+    Map<int, dynamic>? authResponse = await _authRepo.signInAuthData(
       userName: event.login,
       password: event.password,
     );

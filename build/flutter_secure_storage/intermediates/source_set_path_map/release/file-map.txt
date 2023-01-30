@@ -5,9 +5,9 @@ com.it_nomads.fluttersecurestorage.flutter_secure_storage-jetified-annotation-ex
 com.it_nomads.fluttersecurestorage.flutter_secure_storage-jetified-window-1.0.0-beta04-4 /Users/dmitrijdemidov/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/res
 com.it_nomads.fluttersecurestorage.flutter_secure_storage-main-5 /Users/dmitrijdemidov/.pub-cache/hosted/pub.dartlang.org/flutter_secure_storage-6.1.0/android/src/main/res
 com.it_nomads.fluttersecurestorage.flutter_secure_storage-release-6 /Users/dmitrijdemidov/.pub-cache/hosted/pub.dartlang.org/flutter_secure_storage-6.1.0/android/src/release/res
-com.it_nomads.fluttersecurestorage.flutter_secure_storage-pngs-7 /Users/dmitrijdemidov/Desktop/market_app/build/flutter_secure_storage/generated/res/pngs/release
-com.it_nomads.fluttersecurestorage.flutter_secure_storage-resValues-8 /Users/dmitrijdemidov/Desktop/market_app/build/flutter_secure_storage/generated/res/resValues/release
-com.it_nomads.fluttersecurestorage.flutter_secure_storage-rs-9 /Users/dmitrijdemidov/Desktop/market_app/build/flutter_secure_storage/generated/res/rs/release
-com.it_nomads.fluttersecurestorage.flutter_secure_storage-mergeReleaseResources-10 /Users/dmitrijdemidov/Desktop/market_app/build/flutter_secure_storage/intermediates/incremental/release/mergeReleaseResources/merged.dir
-com.it_nomads.fluttersecurestorage.flutter_secure_storage-mergeReleaseResources-11 /Users/dmitrijdemidov/Desktop/market_app/build/flutter_secure_storage/intermediates/incremental/release/mergeReleaseResources/stripped.dir
-com.it_nomads.fluttersecurestorage.flutter_secure_storage-merged_res-12 /Users/dmitrijdemidov/Desktop/market_app/build/flutter_secure_storage/intermediates/merged_res/release
+com.it_nomads.fluttersecurestorage.flutter_secure_storage-pngs-7 /Users/dmitrijdemidov/GitHub/market_app/build/flutter_secure_storage/generated/res/pngs/release
+com.it_nomads.fluttersecurestorage.flutter_secure_storage-resValues-8 /Users/dmitrijdemidov/GitHub/market_app/build/flutter_secure_storage/generated/res/resValues/release
+com.it_nomads.fluttersecurestorage.flutter_secure_storage-rs-9 /Users/dmitrijdemidov/GitHub/market_app/build/flutter_secure_storage/generated/res/rs/release
+com.it_nomads.fluttersecurestorage.flutter_secure_storage-mergeReleaseResources-10 /Users/dmitrijdemidov/GitHub/market_app/build/flutter_secure_storage/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.it_nomads.fluttersecurestorage.flutter_secure_storage-mergeReleaseResources-11 /Users/dmitrijdemidov/GitHub/market_app/build/flutter_secure_storage/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.it_nomads.fluttersecurestorage.flutter_secure_storage-merged_res-12 /Users/dmitrijdemidov/GitHub/market_app/build/flutter_secure_storage/intermediates/merged_res/release
