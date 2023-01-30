@@ -154,6 +154,14 @@
       jars="/Users/dmitrijdemidov/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.7.10/1ef73fee66f45d52c67e2aca12fd945dbe0659bf/kotlin-stdlib-jdk7-1.7.10.jar"
       resolved="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10"/>
   <library
+      name="io.flutter:armeabi_v7a_release:1.0.0-3950c6140a3f1cb295364b0446627bd3a1736915@jar"
+      jars="/Users/dmitrijdemidov/.gradle/caches/modules-2/files-2.1/io.flutter/armeabi_v7a_release/1.0.0-3950c6140a3f1cb295364b0446627bd3a1736915/c55de3312bb5fa0f09388320477e1d7032a8c68c/armeabi_v7a_release-1.0.0-3950c6140a3f1cb295364b0446627bd3a1736915.jar"
+      resolved="io.flutter:armeabi_v7a_release:1.0.0-3950c6140a3f1cb295364b0446627bd3a1736915"/>
+  <library
+      name="io.flutter:arm64_v8a_release:1.0.0-3950c6140a3f1cb295364b0446627bd3a1736915@jar"
+      jars="/Users/dmitrijdemidov/.gradle/caches/modules-2/files-2.1/io.flutter/arm64_v8a_release/1.0.0-3950c6140a3f1cb295364b0446627bd3a1736915/9a268b5fc4f7d425800557fab7f67a4e20f421fe/arm64_v8a_release-1.0.0-3950c6140a3f1cb295364b0446627bd3a1736915.jar"
+      resolved="io.flutter:arm64_v8a_release:1.0.0-3950c6140a3f1cb295364b0446627bd3a1736915"/>
+  <library
       name="io.flutter:x86_64_release:1.0.0-3950c6140a3f1cb295364b0446627bd3a1736915@jar"
       jars="/Users/dmitrijdemidov/.gradle/caches/modules-2/files-2.1/io.flutter/x86_64_release/1.0.0-3950c6140a3f1cb295364b0446627bd3a1736915/f9d6b459739620ac99192930076c720853889115/x86_64_release-1.0.0-3950c6140a3f1cb295364b0446627bd3a1736915.jar"
       resolved="io.flutter:x86_64_release:1.0.0-3950c6140a3f1cb295364b0446627bd3a1736915"/>

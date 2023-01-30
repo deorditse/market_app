@@ -39,6 +39,7 @@ class AboutTaskBlocs extends Bloc<AboutTaskEvent, ListAboutTasksInitialState> {
             ),
           );
 
+          //если бы хотел продолжить по методу то continue;
           return;
         }
       }
