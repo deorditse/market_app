@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:meta/meta.dart';
 import 'package:data_layout/data_layout.dart';
 import 'package:models/models.dart';
 
@@ -32,18 +31,17 @@ class AboutTaskBlocs extends Bloc<AboutTaskEvent, ListAboutTasksInitialState> {
       List<InfoOrderModel> listAboutTasks =
           List<InfoOrderModel>.from(responseServer.values.first);
 
-      listAboutTasks.forEach(
-        (element) {
-          if (element.id_order == null) {
-            emit(
-              ErrorListAboutTasksInitialState(
-                errorMessage: "ID orders не заданы",
-              ),
-            );
-            return;
-          }
-        },
-      );
+      for (var element in listAboutTasks) {
+        if (element.id_order == null) {
+          emit(
+            ErrorListAboutTasksInitialState(
+              errorMessage: "ID orders не заданы",
+            ),
+          );
+
+          return;
+        }
+      }
 
       if (listAboutTasks.isNotEmpty) {
         Map<String, List<InfoOrderModel>> mapPlaceAndListInfoOrderModel = {};
