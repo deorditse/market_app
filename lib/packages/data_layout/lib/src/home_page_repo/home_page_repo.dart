@@ -65,15 +65,13 @@ class HomePageRepo {
           'Authorization': basicAuth,
         },
       );
-      final jsonData = json.decode(utf8.decode(response.body.codeUnits));
-
-      // List<String> jsonData = json.decode(utf8.decode(response.body.codeUnits));
+      List jsonData = json.decode(utf8.decode(response.body.codeUnits));
 
       if (response.statusCode == 200) {
         List<InfoOrderModel> listTasks =
-            await jsonData.map((e) => InfoOrderModel.fromJson(e)).toList();
-        print(listTasks);
-        return {200: jsonData};
+            jsonData.map((e) => InfoOrderModel.fromJson(e)).toList();
+
+        return {200: listTasks};
       } else {
         return theRequestFailed(
           nameMethod: "getListTasks",
